@@ -4,7 +4,7 @@
   "description": "this",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "wp": "webpack src/js/app.js"
   },
   "author": "Hessami",
   "license": "MIT",
