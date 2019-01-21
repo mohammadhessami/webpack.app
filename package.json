@@ -1,6 +1,6 @@
 {
   "name": "webpack-app",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "this",
   "main": "app.js",
   "scripts": {
