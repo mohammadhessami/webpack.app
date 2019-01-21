@@ -4,12 +4,17 @@
   "description": "this",
   "main": "app.js",
   "scripts": {
-    "wp": "webpack src/js/app.js"
+    "dev": "webpack --entry ./src/js/app.js --output-filename bundle.js --mode development",
+    "build-prod": "webpack ./src/js/app.js  --output-filename bundle.js --mode production ",
+    "watch": "webpack --entry ./src/js/app.js --output-filename bundle.js --mode development --watch",
+    "dev-server": "webpack-dev-server  --entry ./src/js/app.js --output-filename bundle.js --mode development ",
+    "server-watch": "webpack --entry ./src/js/app.js --output-filename bundle.js --mode development"
   },
   "author": "Hessami",
   "license": "MIT",
   "devDependencies": {
     "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }

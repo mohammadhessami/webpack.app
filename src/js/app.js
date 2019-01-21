@@ -1,11 +1,16 @@
+import { secretBtn, secretParagraph } from "./dom-loader";
 let showSecret = false;
+
 updateSecretParagraph();
-// create a function to hide the secret paragraph
-secretBTN.addEventListener("click", function() {
+
+// add event listener to the secret button
+secretBtn.addEventListener("click", function() {
   showSecret = !showSecret;
+  updateSecretBtn();
   updateSecretParagraph();
-  showSecretBtn();
 });
+
+// create a function to hide the secret paragraph
 function updateSecretParagraph() {
   if (showSecret) {
     secretParagraph.style.display = "block";
@@ -13,11 +18,12 @@ function updateSecretParagraph() {
     secretParagraph.style.display = "none";
   }
 }
-// create a function to update the button from 'show the secret' to 'hide the secret'
+
+// create a function to update the button from "Show th secret" to "Hide the secret"
 function updateSecretBtn() {
   if (showSecret) {
-    secretBTN.innertext = "Hide the secret";
+    secretBtn.innerText = "Hide the secret";
   } else {
-    secretBTN.innertext = "show the secret";
+    secretBtn.innerText = "Show the secret";
   }
 }
